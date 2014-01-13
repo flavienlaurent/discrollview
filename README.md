@@ -1,27 +1,11 @@
-DateTimePicker Compatibility Library
-====================================
-https://android.googlesource.com/platform/frameworks/opt/datetimepicker/
-(Android 4.3+)
-
-DateTimePicker  
+Discrollview  
 ==================
 
-DateTimePicker is a library which contains the beautiful DatePicker and TimePicker that can be seen in the new Google Agenda app.
+Regularly, I am pleasantly surprised by websites using a pattern I called the discrollver pattern. I'm sure you already know what I'm talking about but if not, http://vimeo.com/player is a good example. When you scroll, widgets appear from nowhere by fade, translation or scale.
 
-**This picker is available for 2.1+**
+With DiscrollView, I wanted to import this pattern on Android. This is an 0.0.1 alpha version because you have to do all the transformation work (fade, translation, scale etc) yourself base on a ratio value. I'm going to add some transformation presets (translation from left to right + fade in for example) to make the library more ready to use for lazy developers.
 
-WARNING
--------------------------
-
-* Accessibility is missing for DatePicker on all devices and Below ICS devices for TimePicker.
-* Scroll adjustment for DatePicker on all devices and Below ICS devices for TimePicker.
-
-Description
--------------------------
-
-This library reproduces as much as possible the original picker contained in the new Google Agenda app.
-
-![Example Image][1]
+You see it in action [here][1]
 
 Try out the sample APK [here][2]
 
@@ -35,18 +19,12 @@ Just add the library to your application as a library project.
 Usage
 ---------
 
-Using the library is simple, just look at the source code of the provided sample [here][4]
-
-
-Acknowledgements
---------------------
-
-* Thanks to Google for this beautiful picker
+Using the library is simple, just look at the source code of the provided sample [here][3]
 
 License
 -----------
 
-    Copyright 2013 Flavien Laurent (DatePicker) edisonw (TimePicker)
+    Copyright 2013 Flavien Laurent
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -60,7 +38,6 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
- [1]: https://raw.github.com/biboune/datetimepicker/master/graphics/img1.png
- [2]: https://raw.github.com/biboune/datetimepicker/master/datetimepicker-sample.apk
- [3]: https://github.com/biboune/datetimepicker/tree/master/datetimepicker-sample
- [4]: https://github.com/biboune/datetimepicker/blob/master/datetimepicker-sample/src/com/fourmob/datetimepicker/sample/MainActivity.java
+ [1]: http://youtu.be/FGYaweSP3sA
+ [2]: https://github.com/flavienlaurent/discrollview/raw/master/sample.apk
+ [3]: https://github.com/flavienlaurent/discrollview/tree/master/sample
