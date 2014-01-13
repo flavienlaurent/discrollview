@@ -5,7 +5,7 @@ Regularly, I am pleasantly surprised by websites using a pattern I called the di
 
 With DiscrollView, I wanted to import this pattern on Android. This is an 0.0.1 alpha version because you have to do all the transformation work (fade, translation, scale etc) yourself base on a ratio value. I'm going to add some transformation presets (translation from left to right + fade in for example) to make the library more ready to use for lazy developers.
 
-You see it in action [here][1]
+![Animated gif][4] ([on youtube][1])
 
 Try out the sample APK [here][2]
 
@@ -41,3 +41,4 @@ License
  [1]: http://youtu.be/FGYaweSP3sA
  [2]: https://github.com/flavienlaurent/discrollview/raw/master/sample.apk
  [3]: https://github.com/flavienlaurent/discrollview/tree/master/sample
+ [4]: https://raw2.github.com/flavienlaurent/discrollview/master/discrollview.gif
