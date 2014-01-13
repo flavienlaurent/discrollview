@@ -1,0 +1,9 @@
+<manifest
+    package="com.flavienlaurent.discrollview.lib"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="14"/>
+
+</manifest>
