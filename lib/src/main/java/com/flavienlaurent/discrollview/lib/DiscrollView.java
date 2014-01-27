@@ -13,11 +13,12 @@ import android.widget.ScrollView;
  * else, the discrollvables starts to be discrollved when its top reaches the bottom of the DiscrollView
  *
  * @see com.flavienlaurent.discrollview.lib.Discrollvable
+ * @see com.flavienlaurent.discrollview.lib.DiscrollViewContent
  *
  */
 public class DiscrollView extends ScrollView {
 
-    private ViewGroup mContent;
+    private DiscrollViewContent mContent;
 
     public DiscrollView(Context context) {
         super(context);
@@ -31,8 +32,11 @@ public class DiscrollView extends ScrollView {
         super(context, attrs, defStyle);
     }
 
-    public static float clamp(float value, float max, float min) {
-        return Math.max(Math.min(value, min), max);
+    @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+        setupFirstView();
+
     }
 
     @Override
@@ -42,20 +46,13 @@ public class DiscrollView extends ScrollView {
             throw new IllegalStateException("Discrollview must host one child.");
         }
         View content = getChildAt(0);
-        if(!(content instanceof ViewGroup)) {
-            throw new IllegalStateException("Discrollview must host a ViewGroup.");
+        if(!(content instanceof DiscrollViewContent)) {
+            throw new IllegalStateException("Discrollview must host a DiscrollViewContent.");
         }
-        mContent = (ViewGroup) content;
+        mContent = (DiscrollViewContent) content;
         if(mContent.getChildCount() < 2) {
             throw new IllegalStateException("Discrollview must have at least 2 children.");
         }
-    }
-
-    @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        super.onSizeChanged(w, h, oldw, oldh);
-        setupFirstView();
-
     }
 
     private void setupFirstView() {
@@ -70,6 +67,10 @@ public class DiscrollView extends ScrollView {
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);
         onScrollChanged(t);
+    }
+
+    public static float clamp(float value, float max, float min) {
+        return Math.max(Math.min(value, min), max);
     }
 
     private int getAbsoluteBottom() {
