@@ -16,6 +16,11 @@ Including in your project
 
 Just add the library to your application as a library project.
 
+Compatibilty
+------------
+
+API 14+
+
 Usage
 ---------
 
