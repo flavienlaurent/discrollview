@@ -117,8 +117,8 @@ The threshold attribute is used to trigger the discrollve at a specified ratio. 
         <View
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            discrollve:discrollve_fromColor="#88EE66"
-            discrollve:discrollve_toColor="#000000" />
+            discrollve:discrollve_fromBgColor="#88EE66"
+            discrollve:discrollve_toBgColor="#000000" />
 
         <ImageView
             android:layout_width="220dp"
