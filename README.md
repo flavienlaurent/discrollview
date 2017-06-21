@@ -171,4 +171,4 @@ License
  [1]: http://youtu.be/FGYaweSP3sA
  [2]: https://github.com/flavienlaurent/discrollview/raw/master/sample.apk
  [3]: https://github.com/flavienlaurent/discrollview/tree/master/sample
- [4]: https://raw2.github.com/flavienlaurent/discrollview/master/discrollview.gif
+ [4]: https://github.com/flavienlaurent/discrollview/blob/master/discrollview.gif?raw=true
