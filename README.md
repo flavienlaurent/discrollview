@@ -29,7 +29,7 @@ Using the library is simple, just look at the source code of the provided sample
 ### build.gradle
 
 ```
-compile 'com.github.flavienlaurent.discrollview:library:0.0.2@aar'
+implementation 'com.github.flavienlaurent.discrollview:library:0.0.2@aar'
 ```
 
 ### The main layout
